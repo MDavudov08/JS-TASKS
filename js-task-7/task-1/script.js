@@ -28,6 +28,5 @@ while (true) {
         document.write(`Təbrik edirik! Nömrəni ${cehdler} cəhddə tapdınız.`);
 
         break;
-    } else {
-    }
+    } else {}
 }
