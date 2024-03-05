@@ -1,0 +1,37 @@
+.color-buttons {
+    text-align: center;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.red-button {
+    background-color: red;
+    color: white;
+}
+
+.green-button {
+    background-color: green;
+    color: white;
+}
+
+.blue-button {
+    background-color: blue;
+    color: white;
+}
+
+.yellow-button {
+    background-color: yellow;
+    color: black;
+}
+
+.color-display {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}

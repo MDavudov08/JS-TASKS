@@ -1,0 +1,12 @@
+.btns button{
+    background-color: white;
+    padding: 50px;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.input-btn,.btns {
+    width: 700px;
+    margin: 20px auto;
+}
