@@ -1,0 +1,71 @@
+body {
+    transition: background-color 0.5s, color 0.5s;
+}
+.container,
+table {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+.dark-light button{
+    background-color: black;
+    color: #fff;
+    border-radius: 10px;
+    padding: 4px 11px;
+    border: none;
+    cursor: pointer;
+}
+.mode2 {
+    border: 1px solid #333;
+    background-color: #fff;
+    padding: 5px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: .5s;
+}
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+    .mode2{
+        background-color: transparent;
+        color: #fff;
+    }
+}
+
+
+.inp input {
+    padding: 10px 40px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid orange;
+}
+
+.inp input::placeholder {
+    color: orange;
+}
+
+.inp button,.doneBtn,.deleteBtn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: orange;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+
+table{
+    width: 100%;
+    padding: 20px;
+    margin-top: 10px;
+    border: 1px solid orange;
+}
+.doneBtn,.deleteBtn{
+    margin-left: 10px;
+    padding: 4px 20px;
+    background-color: transparent;
+}
+
+.dno{
+    background-color: orange;
+    color: #fff;
+}
