@@ -6,7 +6,7 @@ request.open("GET", url);
 request.onreadystatechange = function () {
     if (request.readyState === 4) {
         const data = JSON.parse(request.response)
-        data.products.forEach(({ title,description,price,brand,images }) => {
+        data.products.forEach(({ title, description, price, brand, images }) => {
             cards.innerHTML += `
             <div class="card">
                 <div class="image">
@@ -30,5 +30,4 @@ request.onreadystatechange = function () {
         });
     }
 }
-
 request.send()

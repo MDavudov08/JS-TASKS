@@ -45,7 +45,7 @@
     margin: 8px 0;
 }
 
-/*  */
+/**/
 .star-wrapper {
     bottom: 0%;
     left: 0%;
@@ -85,9 +85,3 @@
 .s5:hover~a {
     color: gold;
 }
-
-/* .wraper {
-    position: absolute;
-    bottom: 50px;
-    right: 50px;
-} */
