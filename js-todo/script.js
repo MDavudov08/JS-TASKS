@@ -1,25 +1,18 @@
-const newTodoInput = document.getElementById('newTodoInput')
-const addTodoBtn = document.getElementById('addTodoBtn')
-const tableBody = document.getElementById("tableBody")
+const newTodoInput = document.getElementById('newTodoInput');
+const addTodoBtn = document.getElementById('addTodoBtn');
+const tableBody = document.getElementById("tableBody");
 let uniqueId = 0;
 const modeToggleBtn = document.getElementById('modeToggle');
 const body = document.querySelector('.body');
-modeToggleBtn.innerHTML = "☀️"
+modeToggleBtn.innerHTML = "☀️";
+
 modeToggleBtn.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
     if (modeToggleBtn.innerHTML === "🌙") {
-        modeToggleBtn.innerHTML = "☀️"
+        modeToggleBtn.innerHTML = "☀️";
+    } else {
+        modeToggleBtn.innerHTML = "🌙";
     }
-    else {
-        modeToggleBtn.innerHTML = "🌙"
-    }
-});
-
-addEventListener('load', () => {
-    const todos = JSON.parse(localStorage.getItem('todos')) || [];
-    todos.forEach(todo => {
-        addTodoToTable(todo.id, todo.text, todo.done);
-    });
 });
 
 addTodoBtn.onclick = () => {
@@ -31,7 +24,6 @@ addTodoBtn.onclick = () => {
             done: false
         };
         addTodoToTable(todo.id, todo.text, todo.done);
-        saveTodosToLocalStorage();
     } else {
         alert('Input bosdur');
     }
@@ -61,7 +53,6 @@ const addTodoToTable = (id, text, done) => {
 
     deleteButton.onclick = () => {
         tr.remove();
-        removeTodoFromLocalStorage(id);
     }
 
     isDoneButton.onclick = () => {
@@ -69,35 +60,6 @@ const addTodoToTable = (id, text, done) => {
             isDoneButton.dataset.done = 'true';
             tr.classList.add("dno");
             isDoneButton.remove();
-            updateTodoStatusInLocalStorage(id, true);
         }
     }
-}
-const saveTodosToLocalStorage = () => {
-    const todos = [];
-    const rows = tableBody.querySelectorAll('tr');
-    rows.forEach(row => {
-        const id = row.querySelector('td:first-child').innerText;
-        const text = row.querySelector('td:nth-child(2)').innerText;
-        const done = row.querySelector('.doneBtn').dataset.done === 'true';
-        todos.push({ id, text, done });
-    });
-    localStorage.setItem('todos', JSON.stringify(todos));
-}
-
-const removeTodoFromLocalStorage = (id) => {
-    let todos = JSON.parse(localStorage.getItem('todos')) || [];
-    todos = todos.filter(todo => todo.id != id);
-    localStorage.setItem('todos', JSON.stringify(todos));
-}
-
-const updateTodoStatusInLocalStorage = (id, done) => {
-    let todos = JSON.parse(localStorage.getItem('todos')) || [];
-    todos = todos.map(todo => {
-        if (todo.id == id) {
-            return { ...todo, done };
-        }
-        return todo;
-    });
-    localStorage.setItem('todos', JSON.stringify(todos));
 }
