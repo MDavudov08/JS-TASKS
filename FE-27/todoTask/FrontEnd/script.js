@@ -1,29 +1,27 @@
 const newTodoInput = document.getElementById('newTodoInput');
 const addTodoBtn = document.getElementById('addTodoBtn');
 const tableBody = document.getElementById("tableBody");
-const modeToggleBtn = document.getElementById('modeToggle');
-const body = document.querySelector('.body');
-const apiUrl = 'http://localhost:3000/todos';
+const Url = 'http://localhost:3000/todos';
 
 
 const fetchTodos = async () => {
-    const response = await axios.get(apiUrl);
+    const response = await axios.get(Url);
     const todos = response.data;
     todos.forEach(todo => addTodoToTable(todo.id, todo.text, todo.done));
 };
 
 const addTodo = async (text) => {
-    const response = await axios.post(apiUrl, { text, done: false });
+    const response = await axios.post(Url, { text, done: false });
     const newTodo = response.data;
     addTodoToTable(newTodo.id, newTodo.text, newTodo.done);
 };
 
 const updateTodo = async (id, text, done) => {
-    await axios.patch(`${apiUrl}/${id}`, { text, done });
+    await axios.patch(`${Url}/${id}`, { text, done });
 };
 
 const deleteTodo = async (id) => {
-    await axios.delete(`${apiUrl}/${id}`);
+    await axios.delete(`${Url}/${id}`);
 };
 
 addTodoBtn.onclick = () => {
