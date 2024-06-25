@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header,footer{
+    background-color: black;
+    padding: 20px;
+}
+footer h2{
+    color: red;
+}
+header a{
+    text-decoration: none;
+    color: red;
+    text-transform: uppercase;
+    margin-right: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: .5s;
+    padding: 10px;
+    border-radius: 10px;
+}
+header a:hover{
+    color: black;
+    background-color: red;
+}
+
+.cards{
+    min-width: 1200px;
+    margin: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.card{
+    border: 2px solid darkred;
+    padding: 10px;
+    border-radius: 10px;
+}
