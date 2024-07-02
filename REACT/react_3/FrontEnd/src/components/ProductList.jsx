@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios'
 
+
 const ProductList = () => {
     const [products, setProducts] = useState([]);
 
@@ -9,9 +10,6 @@ const ProductList = () => {
             .then(response => {
                 setProducts(response.data);
             })
-            .catch(error => {
-                console.error('Error fetching the products:', error);
-            });
     }, []);
 
     return (
