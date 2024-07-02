@@ -1,0 +1,66 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Apple iPhone 13",
+        "price": 2500,
+        "discountPrice": 2000,
+        "image": "https://www.phoneprice.co.ke/wp-content/uploads/2022/03/Apple-iPhone-13-d-150x150.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Apple iPhone 15",
+        "price": 2999,
+        "discountPrice": null,
+        "image": "https://intercomp.com.mt/wp-content/uploads/2024/06/63166-150x150.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Xiaomi Redmi Note 12 Pro ",
+        "price": 1800,
+        "discountPrice": 1500,
+        "image": "https://bermorzone.com.ph/wp-content/uploads/2023/08/note-12-pro-5g-btz-150x150.webp"
+      },
+      {
+        "id": 4,
+        "name": "Samsung Galaxy M33 ",
+        "price": 1200,
+        "discountPrice": 1150,
+        "image": "https://www.jiomart.com/images/product/original/493664862/samsung-galaxy-m33-5g-128-gb-6-gb-ram-mystique-green-mobile-phone-digital-o493664862-p597816556-0-202301241449.jpeg?im=Resize=(150,150)"
+      },
+      {
+        "id": 5,
+        "name": "Google Pixel 7a ",
+        "price": 2000,
+        "discountPrice": 1899,
+        "image": "https://www.phoneprice.co.ke/wp-content/uploads/2023/01/Google-Pixel-7a-21-150x150.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Vivo Y02T ",
+        "price": 1000,
+        "discountPrice": 950,
+        "image": "https://www.kharido.com.pk/wp-content/uploads/2023/12/Vivo-Y02T-4GB-Ram-64GB-Rom-Android-13-2-150x150.webp"
+      },
+      {
+        "id": 7,
+        "name": "Samsung Galaxy A15 ",
+        "price": 1720,
+        "image": "https://www.itworld.com.my/image/cache/catalog/Images/Smartphone/PHOSAMSA156EZK_T1-150x150.jpg"
+      },
+      {
+        "id": 8,
+        "name": "iPhone 13 Mini",
+        "price": 2200,
+        "discountPrice": 2099,
+        "image": "https://phonehubkenya.co.ke/wp-content/uploads/2022/02/iphone-13-mini-150x150.jpeg"
+      },
+      {
+        "id": 9,
+        "name": "Nokia 1110",
+        "price": 9999,
+        "image": "https://thedealsguru.com/wp-content/uploads/2019/04/1110-150x150.jpg.webp"
+      }
+    ]
+  }
+  

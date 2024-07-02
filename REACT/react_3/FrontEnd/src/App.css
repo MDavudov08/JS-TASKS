@@ -1,0 +1,41 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 50px;
+}
+
+.first-div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.second-div {
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+}
+
+.span_1 {
+  text-decoration: line-through;
+  margin-right: 10px;
+  color: red;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 16px;
+}
+
+span {
+  font-weight: bold;
+}
